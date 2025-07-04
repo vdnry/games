@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | Dodge</title>
+    <title>Dodge</title>
   </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0; overflow:hidden;">
-    <canvas id="unity-canvas" width=96 height=49 tabindex="-1" style="width: 100%; height: 100%x; background: #231F20"></canvas>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0; overflow: hidden;">
+    <canvas id="unity-canvas" width=1920 height=1000 tabindex="-1" style="width: 100%; height: 100%; background: #231F20"></canvas>
     <script src="Build/dodge.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/dodge.data",
-        frameworkUrl: "Build/dodge.framework.js",
-        codeUrl: "Build/dodge.wasm",
+        dataUrl: "Build/dodge.data.unityweb",
+        frameworkUrl: "Build/dodge.framework.js.unityweb",
+        codeUrl: "Build/dodge.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "vdnry",
         productName: "Dodge",
